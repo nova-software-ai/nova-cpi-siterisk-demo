@@ -28,7 +28,7 @@ def Message processData(Message message) {
     }
 
     // --- decision table from sheet 'RiskRules', evaluated by Priority ---
-    if (n(t.aqi) >= 140) {        // R10 prio 1
+    if (n(t.aqi) >= 130) {        // R10 prio 1
         t.riskLevel = 'SEVERE'
         t.advisory  = 'Outdoor work suspended'
         t.dispatchFlag = true
